@@ -1,0 +1,274 @@
+
+.contact-section {
+  position: relative;
+  overflow: hidden;
+  padding: 110px 0;
+  background: #090909;
+}
+
+.contact-bg {
+  position: absolute;
+  inset: 0;
+  opacity: .28;
+  background:
+    linear-gradient(90deg, #090909 0%, rgba(9,9,9,.72) 100%),
+    url("https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1800&q=85") center/cover;
+}
+
+.contact-inner {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr .75fr;
+  gap: 90px;
+  align-items: center;
+}
+
+/* =========================
+   LEFT CONTENT
+========================= */
+
+.contact-copy h2 {
+  margin: 0;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: clamp(4rem, 8vw, 7rem);
+  line-height: .83;
+}
+
+.contact-copy h2 span {
+  color: var(--primary);
+}
+
+.contact-copy > p {
+  max-width: 530px;
+  color: #999;
+  line-height: 1.8;
+  font-size: .9rem;
+  margin: 28px 0;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-details div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #aaa;
+  font-size: .75rem;
+}
+
+.contact-details svg {
+  color: var(--primary);
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 30px;
+  background: rgba(15, 15, 15, .92);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+}
+
+/* Form group */
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+/* Labels */
+
+.form-group label {
+  color: #aaa;
+  font-size: .65rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+/* Inputs */
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+  width: 100%;
+  padding: 15px;
+  color: #fff;
+  background: #090909;
+  border: 1px solid #282828;
+  border-radius: 4px;
+  outline: none;
+  font-size: .78rem;
+  font-family: inherit;
+  transition: border-color .25s ease, background .25s ease;
+}
+
+/* Placeholder */
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #666;
+}
+
+/* Focus */
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus {
+  border-color: var(--primary);
+  background: #0c0c0c;
+}
+
+/* Select */
+
+.contact-form select {
+  color: #999;
+  cursor: pointer;
+}
+
+.contact-form select:valid {
+  color: #fff;
+}
+
+/* Textarea */
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* =========================
+   SUBMIT BUTTON
+========================= */
+
+.contact-submit {
+  width: 100%;
+  margin-top: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  cursor: pointer;
+}
+
+/* Disabled / WhatsApp opening */
+
+.contact-submit:disabled {
+  opacity: .65;
+  cursor: not-allowed;
+}
+
+/* =========================
+   WHATSAPP NOTE
+========================= */
+
+.whatsapp-note {
+  margin: 0;
+  text-align: center;
+  color: #666;
+  font-size: .65rem;
+  line-height: 1.5;
+}
+
+
+/* =========================
+   HOVER EFFECT
+========================= */
+
+.contact-form {
+  transition: border-color .3s ease, transform .3s ease;
+}
+
+.contact-form:hover {
+  border-color: rgba(255, 255, 255, .16);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+  .contact-inner {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .contact-section {
+    padding: 80px 0;
+  }
+
+  .contact-copy h2 {
+    font-size: clamp(3.5rem, 15vw, 6rem);
+  }
+
+  .contact-form {
+    padding: 25px 20px;
+  }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+  .contact-section {
+    padding: 65px 0;
+  }
+
+  .contact-form {
+    padding: 20px 16px;
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form select {
+    padding: 13px;
+    font-size: .75rem;
+  }
+
+  .form-group label {
+    font-size: .6rem;
+  }
+
+  .whatsapp-note {
+    font-size: .58rem;
+  }
+}
+
+.contact-link {
+  color: #aaa;
+  text-decoration: none;
+  line-height: 1.6;
+  transition: color 0.25s ease;
+}
+
+.contact-link:hover {
+  color: var(--primary);
+}
+
+.closed-day {
+  display: inline-block;
+  margin-top: 5px;
+  color: #777;
+  font-weight: 500;
+}
+
+

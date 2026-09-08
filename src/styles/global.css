@@ -1,0 +1,103 @@
+:root {
+  --primary: #e63946;
+  --primary-dark: #b91f2d;
+  --black: #080808;
+  --surface: #101010;
+  --surface-2: #151515;
+  --white: #ffffff;
+  --muted: #999999;
+  --border: rgba(255,255,255,.09);
+  --container: 1180px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--black);
+  color: var(--white);
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+
+body, button, input, textarea, select { font-family: inherit; }
+
+a { color: inherit; text-decoration: none; }
+
+button { border: 0; }
+
+img { display: block; max-width: 100%; }
+
+.container {
+  width: min(calc(100% - 40px), var(--container));
+  margin-inline: auto;
+}
+
+.section { padding: 110px 0; }
+
+.section-tag {
+  color: var(--primary);
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+  margin-bottom: 14px;
+}
+
+.section-heading { margin-bottom: 55px; }
+
+.section-heading.center { text-align: center; }
+
+.section-heading h2,
+.about-copy h2 {
+  margin: 0;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: clamp(3rem, 6vw, 5rem);
+  line-height: .9;
+  letter-spacing: -1px;
+}
+
+.section-heading h2 span,
+.about-copy h2 span { color: var(--primary); }
+
+.section-heading p {
+  color: var(--muted);
+  max-width: 560px;
+  line-height: 1.7;
+  margin: 20px 0 0;
+}
+
+.section-heading.center p { margin-inline: auto; }
+
+.btn {
+  min-height: 52px;
+  padding: 0 25px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 5px;
+  font-weight: 800;
+  font-size: .8rem;
+  text-transform: uppercase;
+  letter-spacing: .7px;
+  cursor: pointer;
+  transition: .3s ease;
+}
+
+.btn-primary {
+  color: #fff;
+  background: var(--primary);
+}
+
+.btn-primary:hover {
+  background: var(--primary-dark);
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(230,57,70,.22);
+}
+
+@media (max-width: 700px) {
+  .container { width: min(calc(100% - 30px), var(--container)); }
+  .section { padding: 80px 0; }
+}

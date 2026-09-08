@@ -1,0 +1,89 @@
+.programs { background: #080808; }
+
+.program-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.program-card {
+  position: relative;
+  min-height: 280px;
+  padding: 28px;
+  background: #111;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  overflow: hidden;
+  transition: border-color .3s;
+}
+
+.program-card:hover { border-color: rgba(230,57,70,.45); }
+
+.program-card::after {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  right: -80px;
+  bottom: -80px;
+  background: var(--primary);
+  opacity: .06;
+  border-radius: 50%;
+  transition: .4s;
+}
+
+.program-card:hover::after {
+  transform: scale(2);
+  opacity: .1;
+}
+
+.program-icon {
+  width: 58px;
+  height: 58px;
+  display: grid;
+  place-items: center;
+  color: var(--primary);
+  background: rgba(230,57,70,.09);
+  border-radius: 4px;
+}
+
+.program-no {
+  position: absolute;
+  right: 25px;
+  top: 30px;
+  color: #333;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.program-card h3 {
+  margin: 35px 0 12px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+}
+
+.program-card p {
+  max-width: 280px;
+  color: #858585;
+  line-height: 1.7;
+  font-size: .8rem;
+}
+
+.program-card > a {
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+  color: #777;
+}
+
+.program-card:hover > a { color: var(--primary); }
+
+@media (max-width: 900px) {
+  .program-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .program-grid { grid-template-columns: 1fr; }
+}
