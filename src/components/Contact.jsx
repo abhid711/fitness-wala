@@ -322,7 +322,7 @@ I want to book a consultation with Fitness Wala Gym.
               "OPENING WHATSAPP..."
             ) : (
               <>
-                Book Free Consultation
+                Book Consultation
                 <ArrowRight size={18} />
               </>
             )}

@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Check, ArrowUpRight } from "lucide-react";
 import "../styles/about.css";
 import React from "react";
+import gymImage from "../image/gym.png"
 
 const features = ["Modern Equipment", "Certified Trainers", "Personalized Plans", "Clean Environment"];
 
@@ -15,10 +16,18 @@ export default function About() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.2 }}
         >
-          <img
-            src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=85"
-            alt="Modern gym training area"
-          />
+         <img
+  src={gymImage}
+  alt="Fitness Wala Gym"
+  style={{
+    width: "100%",
+    height: "100%",
+    objectFit: "contain",
+    display: "block",
+  }}
+/>
+           
+
           <div className="about-number">
             <strong>10</strong><span>YEARS OF<br />EXCELLENCE</span>
           </div>

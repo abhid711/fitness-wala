@@ -4,7 +4,7 @@ import "../styles/testimonials.css";
 import React from "react";
 
 const testimonials = [
-  ["Amit Verma", "Member", "Fitness Wala completely changed the way I approach fitness. The trainers are excellent and the atmosphere is amazing."],
+  ["Abhi Dubey", "Member", "Fitness Wala completely changed the way I approach fitness. The trainers are excellent and the atmosphere is amazing."],
   ["Priya Singh", "Member", "I lost 12kg and became much stronger. The personalized guidance and accountability made a huge difference."],
   ["Rohit Gupta", "Member", "Best gym experience I've had. Great equipment, professional trainers and a seriously motivating community."],
 ];

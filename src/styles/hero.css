@@ -13,9 +13,11 @@
   z-index: -3;
   background:
     linear-gradient(90deg, rgba(5,5,5,.97) 0%, rgba(5,5,5,.8) 42%, rgba(5,5,5,.28) 100%),
-    url("https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=2200&q=90") center/cover;
+    url("https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=2200&q=90") 
+    center/cover;
   transform: scale(1.03);
   animation: heroZoom 12s ease-in-out infinite alternate;
+  
 }
 
 .hero-grid {

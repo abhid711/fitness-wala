@@ -2,11 +2,19 @@ import { motion } from "framer-motion";
 import "../styles/trainers.css";
 import React from "react";
 
+import trainer1 from "../../src/image/trainer1.png";
+
+import trainer3 from "../../src/image/trainer3.png";
+import trainer2 from "../../src/image/trainer2.png";
+
 const trainers = [
-  ["Vikash Bhargav", "Head Coach", "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=900&q=85"],
-  ["Gaurav Dabgar", "Strength Coach", "https://images.unsplash.com/photo-1567013127542-490d757e51fc?auto=format&fit=crop&w=900&q=85"],
-  ["Shubhank Verma", "Fitness Coach", "https://images.unsplash.com/photo-1548690312-e3b507d8c110?auto=format&fit=crop&w=900&q=85"],
+  ["Dr . Vikas Bhargava", "Head Coach", trainer1],
+
+  ["Shubhank Verma", "Fitness Coach", trainer3],
+    ["Gaurav Dabgar", "Strength Coach", trainer2],
 ];
+
+
 
 export default function Trainers() {
   return (

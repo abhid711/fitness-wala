@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
-import { ArrowUpRight, Dumbbell, Flame, Target, HeartPulse, Zap, UserRound } from "lucide-react";
+import { ArrowUpRight, Dumbbell, Flame, Target, HeartPulse, Zap, UserRound, IdCardIcon, HeartHandshake } from "lucide-react";
 import "../styles/programs.css";
 import React from "react";
 
 const programs = [
   ["Strength Training", "Build strength, muscle and confidence with progressive training.", Dumbbell],
   ["Fat Loss", "Smart workouts and sustainable habits designed for real results.", Flame],
-  ["Boxing & Combat", "Improve conditioning, coordination and confidence.", Target],
-  ["Yoga & Mobility", "Move better, recover faster and improve flexibility.", HeartPulse],
+  ["Cardio Training", "Improve stamina, endurance and overall cardiovascular fitness.", HeartHandshake],
+  ["Mobility", "Move better, recover faster and improve flexibility.", HeartPulse],
   ["HIIT", "Short, intense sessions that challenge your entire body.", Zap],
   ["Personal Training", "One-to-one coaching built around your exact goals.", UserRound],
 ];

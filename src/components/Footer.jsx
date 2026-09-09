@@ -1,4 +1,4 @@
-import { Instagram, Facebook, Youtube, ArrowUpRight } from "lucide-react";
+import { Instagram, Facebook, Youtube, ArrowUpRight, MapIcon, WheatIcon, MessageCircleMore } from "lucide-react";
 import "../styles/footer.css";
 import React from "react";
 
@@ -18,8 +18,8 @@ export default function Footer() {
         </div>
         <div className="socials">
           <a href="https://www.instagram.com/fitnesswala_gym?stkn=ZHFiZGR6bGYxc3Nt&utm_source=qr" aria-label="Instagram"><Instagram size={18} /></a>
-          <a href="#" aria-label="Facebook"><Facebook size={18} /></a>
-          <a href="#" aria-label="YouTube"><Youtube size={18} /></a>
+          <a href="https://wa.me/918269330675" aria-label="Facebook"><MessageCircleMore size={18} /></a>
+          <a href="https://share.google/8qboDPkl1DNAgIqJm" aria-label="map"><MapIcon size={18} /></a>
         </div>
       </div>
       <div className="container footer-bottom">
